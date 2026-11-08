@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Annex of Evidentiary Exhibits</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617'
+                        },
+                        uspto: {
+                            blue: '#1d4ed8',
+                            red: '#dc2626',
+                            yellow: '#d97706',
+                            green: '#16a34a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'Menlo', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: #ffffff; color: #000000; }
+            .page-break { page-break-before: always; }
+            .shadow-lg, .shadow-md, .shadow-sm { box-shadow: none !important; }
+        }
+        .exhibit-img {
+            max-height: 500px;
+            width: 100%;
+            object-fit: contain;
+            background-color: #0f172a;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans antialiased min-h-screen flex flex-col">
+
+    <!-- TOP NAVIGATION / ACTION BAR -->
+    <header class="bg-navy-950 text-white border-b border-slate-700 sticky top-0 z-50 no-print shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-scale-balanced text-amber-400 text-xl"></i>
+                <span class="font-bold text-lg tracking-tight">Prior Art Dossier</span>
+                <span class="bg-blue-900/80 text-blue-200 text-xs px-2.5 py-1 rounded-full border border-blue-700 font-mono">Annex of Evidence</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button onclick="window.print()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 px-3.5 py-1.5 rounded-lg text-sm font-medium border border-slate-600 transition flex items-center space-x-2">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Print / Save PDF</span>
+                </button>
+                <a href="https://www.hotels-plus.net" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white px-3.5 py-1.5 rounded-lg text-sm font-medium transition flex items-center space-x-2">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>hotels-plus.net</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MASTER CONTAINER -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-grow w-full space-y-8">
+
+        <!-- CASE METADATA HEADER BANNER -->
+        <section class="bg-navy-900 text-white rounded-xl p-6 sm:p-8 shadow-xl border border-slate-800">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center border-b border-slate-700 pb-6 mb-6 gap-4">
+                <div>
+                    <div class="flex items-center space-x-2 text-amber-400 font-mono text-sm font-semibold mb-1">
+                        <span>SUBMISSION</span>
+                        <span>•</span>
+                        <span> CITATION</span>
+                    </div>
+                    <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                        ANNEX OF EVIDENTIARY EXHIBITS
+                    </h1>
+                    <p class="text-slate-400 text-sm mt-1">
+                        Prior Art Disclosures: September 6, 2019 & November 5, 2019 Timestamped Public Video Records
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-2">
+                    <span class="bg-red-950/80 text-red-300 text-xs font-mono font-semibold px-3 py-1.5 rounded-md border border-red-800/60 flex items-center">
+                        <i class="fa-solid fa-crosshairs mr-1.5 text-red-400"></i> Primary Target: 
+                    </span>
+                    <span class="bg-amber-950/80 text-amber-300 text-xs font-mono font-semibold px-3 py-1.5 rounded-md border border-amber-800/60 flex items-center">
+                        <i class="fa-solid fa-crosshairs mr-1.5 text-amber-400"></i> Secondary Target:
+                    </span>
+                </div>
+            </div>
+
+            <!-- METADATA GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs font-mono">
+                <div class="bg-navy-800/60 p-3.5 rounded-lg border border-slate-700/60">
+                    <span class="text-slate-400 block mb-1">Target App:</span>
+                    <span class="font-bold text-white text-sm"></span>
+                    <span class="text-slate-400 block mt-0.5">Let you know. / KAY</span>
+                </div>
+                <div class="bg-navy-800/60 p-3.5 rounded-lg border border-slate-700/60">
+                    <span class="text-slate-400 block mb-1">Target Application 2:</span>
+                    <span class="font-bold text-white text-sm">Let You Know Later4</span>
+                    <span class="text-slate-400 block mt-0.5">KAY, Inc.</span>
+                </div>
+                <div class="bg-navy-800/60 p-3.5 rounded-lg border border-slate-700/60">
+                    <span class="text-slate-400 block mb-1">Evidentiary Baseline:</span>
+                    <span class="font-bold text-emerald-400 text-sm">Sep 6 & Nov 5, 2019</span>
+                    <span class="text-slate-400 block mt-0.5">YouTube Printed Publications</span>
+                </div>
+                <div class="bg-navy-800/60 p-3.5 rounded-lg border border-slate-700/60">
+                    <span class="text-slate-400 block mb-1">Domain & Platform Anchor:</span>
+                    <a href="https://www.hotels-plus.net" target="_blank" class="font-bold text-blue-400 hover:underline text-sm block truncate">https://www.hotels-plus.net</a>
+                    <span class="text-slate-400 block mt-0.5">Hotels-Plus Platform</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMAL LEGAL INTRODUCTION -->
+        <section class="bg-white rounded-xl p-6 sm:p-8 shadow-md border border-slate-200">
+            <div class="flex items-center space-x-3 border-b border-slate-200 pb-4 mb-4">
+                <i class="fa-solid fa-file-contract text-blue-700 text-xl"></i>
+                <h2 class="text-xl font-bold text-slate-900">1.  Basis & Evidentiary </h2>
+            </div>
+            <div class="space-y-4 text-sm text-slate-700 leading-relaxed">
+                <p>
+                    This Annex establishes the complete visual prior art Citation of Prior Art  <strong>LATER</strong> KAY and <strong>U.S. Patent Later</strong> r <strong></strong> and <strong>XXX</strong>, publicly accessible YouTube video broadcasts, accompanied by screen captures and technical slide demonstrations, constitute valid "printed publications" as of their public indexing dates.
+                </p>
+                <div class="bg-slate-50 border-l-4 border-blue-600 p-4 rounded-r-lg space-y-2 font-mono text-xs text-slate-800">
+                    <div><strong class="text-blue-900">Reference B:</strong> YouTube Broadcast URL: <a href="https://www.youtube.com/watch?v=fsRh-98KC-w" target="_blank" class="text-blue-700 hover:underline">https://www.youtube.com/watch?v=fsRh-98KC-w</a> (Publicly Uploaded: <strong>Nov 5, 2019</strong>)</div>
+                    <div><strong class="text-blue-900">Reference E:</strong> YouTube Broadcast URL: <a href="https://www.youtube.com/watch?v=IbN8lSklxuc" target="_blank" class="text-blue-700 hover:underline">https://www.youtube.com/watch?v=IbN8lSklxuc</a> (Publicly Premiered: <strong>Sep 6, 2019</strong>)</div>
+                </div>
+                <p>
+                    The visual disclosures .
+                </p>
+            </div>
+        </section>
+
+        <!-- EXHIBITS DISPLAY SECTION -->
+        <section class="space-y-8">
+            <div class="flex items-center justify-between border-b border-slate-300 pb-3">
+                <div class="flex items-center space-x-3">
+                    <i class="fa-solid fa-images text-slate-800 text-xl"></i>
+                    <h2 class="text-xl font-bold text-slate-900">2. Annotated Evidentiary Exhibits</h2>
+                </div>
+                <span class="text-xs font-mono bg-slate-200 text-slate-700 font-semibold px-3 py-1 rounded-full">10 Total Exhibits</span>
+            </div>
+
+            <!-- EXHIBIT B-1 -->
+            <!-- EXHIBIT V-001 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-001:Admin Control Panel /Room & Hotel Activation Features</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 1 of 20 | Annex Reference: ANNEX-V-001</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/Activating chart.png" alt="Exhibit V-001 - Domain / Identity Continuity" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-001')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Activating Room/Hotel Relocation Features By Hotel Manager</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong>XXXX.</p>
+        </div>
+    </div>
+</div>
+
+            <!-- EXHIBIT V-002 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-002:Admin Control Panel /Room & Hotel Activation Features</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 1 of 20 | Annex Reference: ANNEX-V-001</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/Relocation Featuers.png" alt="Exhibit V-001 - Domain / Identity Continuity" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-001')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Activating Room/Hotel Relocation Features By Hotel Manager</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong> XXXX.</p>
+        </div>
+    </div>
+</div>
+
+            <!-- EXHIBIT V-003 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-003:User Interface</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 2 of 20 | Annex Reference: ANNEX-V-002</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/3.png" alt="Exhibit V-003 - UI" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> User Interface</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong> XXX.</p>
+        </div>
+    </div>
+</div>
+
+            <!-- EXHIBIT V-004 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-004:Hotel's Booing Chart</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 2 of 20 | Annex Reference: ANNEX-V-002</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/4.png" alt="Exhibit V-004 -Hotel's Booing Chart" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Hotel's Booing Chart</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong>XXXX.</p>
+        </div>
+    </div>
+</div>
+
+                  <!-- EXHIBIT V-005 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-005:Standard Room' Gap/ Hotel's Booing Chart</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 3 of 20 | Annex Reference: ANNEX-V-003</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/5.png" alt="Exhibit V-003 - UI" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Exhibit V-005:Standard Room' Gap/ Hotel's Booing Chart</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong> XXX.</p>
+        </div>
+    </div>
+</div>
+
+            <!-- EXHIBIT V-006 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-006:Familty Room' Gap/ Hotel's Booing Chart</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 2 of 20 | Annex Reference: ANNEX-V-002</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/6.png" alt="Exhibit V-004 -Hotel's Booing Chart" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Hotel's Booing Chart</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong>XXXX.</p>
+        </div>
+    </div>
+</div>
+
+
+
+                            <!-- EXHIBIT V-007 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-007:Hotels Plus Backend handle The combining Room Types </h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 4 of 20 | Annex Reference: ANNEX-V-004</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/7.png" alt="Exhibit V-003 - UI" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Exhibit V-008:Hotels Plus Backend handle The combining Room Types</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong> XXX.</p>
+        </div>
+    </div>
+</div>
+
+            <!-- EXHIBIT V-009 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-008:Hotels Plus Combining Room Types/ Booking Chart</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 4 of 20 | Annex Reference: ANNEX-V-004</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/8.png" alt="Exhibit V-004 -Hotel's Booing Chart" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Hotel's Booing Chart</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong>XXXX.</p>
+        </div>
+    </div>
+</div>
+
+           <div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-009:Real Booking Combining Room Types </h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 4 of 20 | Annex Reference: ANNEX-V-004</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/9.png" alt="Exhibit V-003 - UI" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Exhibit V-009:Hotels Plus Backend handle The combining Room Types</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong> XXX.</p>
+        </div>
+    </div>
+</div>
+
+            <!-- EXHIBIT V-0010 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-010:Hotels Plus Combining Room Types/ Booking Chart</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 4 of 20 | Annex Reference: ANNEX-V-004</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/10.png" alt="Exhibit V-004 -Hotel's Booing Chart" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Hotel's Booing Chart</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong>XXXX.</p>
+        </div>
+    </div>
+</div>
+
+
+
+<!--NEW Section Div-->
+
+        <!-- EXHIBIT V-0011 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-0011:Hotels Plus Combining Room Types/ Booking Chart</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 5 of 20 | Annex Reference: ANNEX-V-005</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/11.png" alt="Exhibit V-004 -Hotel's Booing Chart" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Hotel's Booing Chart</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong>XXXX.</p>
+        </div>
+    </div>
+</div>
+
+           <div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-011:Real Booking Combining Room Types </h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 4 of 20 | Annex Reference: ANNEX-V-004</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/12.png" alt="Exhibit V-003 - UI" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Exhibit V-009:Hotels Plus Backend handle The combining Room Types</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong> XXX.</p>
+        </div>
+    </div>
+</div>
+
+            <!-- EXHIBIT V-0012 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-013: Boking Displays Combining Room Types</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 5 of 20 | Annex Reference: ANNEX-V-005</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/13.png" alt="Exhibit V-004 -Hotel's Booing Chart" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Hotel's Booing Chart</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong>XXXX.</p>
+        </div>
+    </div>
+</div>
+
+<!--Exh 13-->
+
+           <!-- EXHIBIT V-0012 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-014: Boking Displays Combining Room Types</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 5 of 20 | Annex Reference: ANNEX-V-005</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/14.png" alt="Exhibit V-004 -Hotel's Booing Chart" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Hotel's Booing Chart</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong>XXXX.</p>
+        </div>
+    </div>
+</div>
+
+        <!-- EXHIBIT V-0012 -->
+<div id="exhibit-v001" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Exhibit V-014: Boking Displays Combining Room Types</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Page Reference: Page 5 of 20 | Annex Reference: ANNEX-V-005</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Image Container -->
+                    <div class="w-full flex justify-center bg-slate-900 p-2 rounded-lg">
+            <img src="Ext-1/14.png" alt="Exhibit V-004 -Hotel's Booing Chart" class="img-full max-h-[700px] w-full object-contain mx-auto rounded" onerror="handleImgError(this, 'ANNEX-V-002')">
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Hotel's Booing Chart</p>
+            <p class="m-0"><strong>Source Text Excerpt:</strong>XXXX.</p>
+        </div>
+    </div>
+</div>
+
+<!--Vieo Section-->
+
+
+<!-- VIDEO EXHIBIT EMBED -->
+<div id="exhibit-video-embed" class="bg-white rounded-xl shadow-md border border-slate-200 overflow-hidden mb-8">
+    <!-- Dark Blue Header -->
+    <div class="bg-slate-900 text-white px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+        <h3 class="text-lg font-semibold tracking-wide m-0">Video Evidence Disclosure: Hotels-Plus Relocation Walkthrough</h3>
+        <p class="text-xs text-slate-300 font-mono m-0">Source URL: youtube.com/watch?v=kPdF9HWphkk</p>
+    </div>
+
+    <!-- Body Container -->
+    <div class="p-6 space-y-4">
+        <!-- Responsive Video Container (16:9 Aspect Ratio) -->
+        <div class="relative w-full overflow-hidden rounded-lg bg-black shadow-inner" style="padding-top: 56.25%;">
+            <iframe 
+                class="absolute top-0 left-0 w-full h-full border-0"
+                src="https://www.youtube.com/embed/kPdF9HWphkk?si=izldmoghpHlIDP9t" 
+                title="YouTube video player" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Metadata Section -->
+        <div class="text-sm text-slate-700 space-y-2 pt-2 border-t border-slate-100">
+            <p class="m-0"><strong>Corresponds to Claim:</strong> Live System Enablement</p>
+            <p class="m-0"><strong>Technical Note:</strong> Timestamped video demonstration detailing split-stay booking paths, room relocation logic, and domain connection to `hotels-plus.net`.</p>
+        </div>
+    </div>
+</div>
+        </section>
+
+
+        <!-- VERBATIM CLAIM MAPPING TABLE -->
+         <!--
+        <section class="bg-white rounded-xl p-6 sm:p-8 shadow-md border border-slate-200 space-y-6">
+            <div class="flex items-center space-x-3 border-b border-slate-200 pb-4">
+                <i class="fa-solid fa-table text-blue-700 text-xl"></i>
+                <div>
+                    <h2 class="text-xl font-bold text-slate-900">3. Verbatim Claim Limitation Mapping Table</h2>
+                    <p class="text-slate-500 text-xs">U.S. Application Serial No. 18/906,983 (Allowed Claims 2, 8, 17)</p>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="min-w-full text-xs text-left border-collapse border border-slate-300">
+                    <thead class="bg-slate-900 text-white font-mono">
+                        <tr>
+                            <th class="p-3 border border-slate-700 w-1/4">Allowed Claim Limitation</th>
+                            <th class="p-3 border border-slate-700 w-1/6">Exhibit Ref.</th>
+                            <th class="p-3 border border-slate-700">2019 Hotels-Plus Technical Disclosure</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 font-sans leading-relaxed">
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-semibold text-slate-900 border border-slate-200">
+                                <strong>Limitation 1:</strong> Receiving search query criteria associated with a split stay.
+                            </td>
+                            <td class="p-3 border border-slate-200 font-mono text-blue-700 font-bold">Exhibit B-1 / C-3</td>
+                            <td class="p-3 border border-slate-200 text-slate-700">
+                                Displays interactive GUI accepting destination, check-in, check-out dates, and executing subquery parameters.
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-semibold text-slate-900 border border-slate-200">
+                                <strong>Limitation 2:</strong> Executing mixture query instructions upon single-stay failure.
+                            </td>
+                            <td class="p-3 border border-slate-200 font-mono text-blue-700 font-bold">Exhibit C-1 / C-6</td>
+                            <td class="p-3 border border-slate-200 text-slate-700">
+                                Demonstrates "No Available Rooms" error triggering algorithmic matrix stitching across non-contiguous dates.
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-semibold text-slate-900 border border-slate-200">
+                                <strong>Limitation 3 & 4:</strong> Generating subqueries & determining split-stay leg options.
+                            </td>
+                            <td class="p-3 border border-slate-200 font-mono text-blue-700 font-bold">Exhibit C-4 / C-5</td>
+                            <td class="p-3 border border-slate-200 text-slate-700">
+                                Displays Leg 1 ($55/night, Standard Room) and Leg 2 ($80/night, Double Room) discrete subquery results.
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-semibold text-slate-900 border border-slate-200">
+                                <strong>Limitation 5 & 6:</strong> Webpage booking path without external redirection.
+                            </td>
+                            <td class="p-3 border border-slate-200 font-mono text-blue-700 font-bold">Exhibit C-7 / C-8</td>
+                            <td class="p-3 border border-slate-200 text-slate-700">
+                                Unified single-page summary combining 5-night and 7-night legs on `hotels-plus.net` site path.
+                            </td>
+                        </tr>
+                        <tr class="hover:bg-slate-50">
+                            <td class="p-3 font-semibold text-slate-900 border border-slate-200">
+                                <strong>Limitation 7:</strong> Hardcoded administrative rebooking criteria.
+                            </td>
+                            <td class="p-3 border border-slate-200 font-mono text-blue-700 font-bold">Exhibit C-2</td>
+                            <td class="p-3 border border-slate-200 text-slate-700">
+                                Back-end Admin Panel showing "Room Relocation" and "Hotel Relocation" checkboxes establishing execution rules.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+-->
+    <!-- FOOTER & REPOSITORY NAV -->
+    <footer class="bg-navy-950 text-slate-400 py-6 border-t border-slate-800 text-xs no-print mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                <p class="font-bold text-white"> Prior Art Annex</p>
+                <p class="text-slate-500 mt-0.5">Hotels-Plus Prior Art Portfolio • Timestamped September / November 2019</p>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="https://aymansalem.github.io/epo-dossier/" target="_blank" class="text-slate-300 hover:text-white transition flex items-center space-x-1">
+                    <i class="fa-brands fa-github text-sm"></i>
+                    <span>EPO Dossier Repository</span>
+                </a>
+                <span>•</span>
+                <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="text-amber-400 hover:text-amber-300 font-medium">
+                    Back to Top <i class="fa-solid fa-arrow-up ml-1"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
